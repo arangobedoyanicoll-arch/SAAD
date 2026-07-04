@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#F4F6F9;
+}
+
+header{
+    background:#0F1F3D;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#B7C3D6;
+}
+
+.hero{
+    width:100%;
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:700px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    padding:50px;
+    text-align:center;
+}
+
+.card img{
+    width:170px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#0F1F3D;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.boton{
+    display:inline-block;
+    background:#0F1F3D;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    margin:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#1d3565;
+}
+
+footer{
+    background:#0F1F3D;
+    color:white;
+    text-align:center;
+    padding:15px;
+}

@@ -1,112 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAAD</title>
 
-    <style>
+<meta charset="UTF-8">
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+<title>SAAD</title>
 
-        body{
-            background:#f4f6f9;
-        }
-
-        .contenedor{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            text-align:center;
-        }
-
-        .card{
-            background:white;
-            padding:40px;
-            border-radius:20px;
-            box-shadow:0 4px 10px rgba(0,0,0,0.2);
-            width:500px;
-        }
-
-        h1{
-            color:#1E3A8A;
-            margin-bottom:15px;
-        }
-
-        p{
-            color:#555;
-            margin-bottom:30px;
-            line-height:1.5;
-        }
-
-        .botones{
-            display:flex;
-            justify-content:center;
-            gap:15px;
-        }
-
-        .btn{
-            text-decoration:none;
-            padding:12px 25px;
-            border-radius:10px;
-            color:white;
-            font-weight:bold;
-        }
-
-        .login{
-            background:#2563EB;
-        }
-
-        .registro{
-            background:#10B981;
-        }
-
-        .btn:hover{
-            opacity:0.8;
-        }
-
-    </style>
+<link rel="stylesheet" href="css/estilos.css">
 
 </head>
+
 <body>
 
-<div class="contenedor">
+<header>
 
-    <div class="card">
+<h1>SAAD</h1>
 
-        <h1>SAAD</h1>
+<nav>
 
-        <h3>Sistema de Atención y Acompañamiento a Padres</h3>
+<a href="index.php">Inicio</a>
 
-        <br>
+<a href="login.php">Iniciar sesión</a>
 
-        <p>
-            Plataforma digital diseñada para la gestión de citaciones,
-            seguimiento académico y atención de padres de familia
-            en la institución educativa.
-        </p>
+<a href="registro.php">Registrarse</a>
 
-        <div class="botones">
+</nav>
 
-            <a href="login.php" class="btn login">
-                Iniciar Sesión
-            </a>
+</header>
 
-            <a href="registro.php" class="btn registro">
-                Registrarse
-            </a>
+<section class="hero">
 
-        </div>
+<div class="card">
 
-    </div>
+<img src="img/logo.png" alt="Logo SAAD">
+
+<h2>Sistema de Atención Académica Digital</h2>
+
+<p>
+
+Facilitamos la comunicación entre docentes,
+padres de familia y estudiantes mediante
+una plataforma moderna y segura.
+
+</p>
+
+<a href="login.php" class="boton">
+
+Iniciar sesión
+
+</a>
+
+<a href="registro.php" class="boton">
+
+Registrarse
+
+</a>
 
 </div>
 
+</section>
+
+<footer>
+
+© 2026 SAAD - Sistema de Atención Académica Digital
+
+</footer>
+
 </body>
+
 </html>
