@@ -33,7 +33,7 @@
 
 <div class="card">
 
-<img src="img/logo.png" alt="Logo SAAD">
+<img src="img/logo.png" alt="logo">
 
 <h2>Sistema de Atención Académica Digital</h2>
 

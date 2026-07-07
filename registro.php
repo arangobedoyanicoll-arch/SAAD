@@ -35,43 +35,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <title>Registro de Usuarios</title>
 </head>
 <body>
 
-<h2>Registro de Usuarios</h2>
+<div class="login-container">
 
-<form method="POST">
+    <img src="img/logo.png" class="logo">
 
-    <label>Nombre:</label><br>
-    <input type="text" name="nombre" required><br><br>
+    <h2>Registro de Usuarios</h2>
 
-    <label>Correo:</label><br>
-    <input type="email" name="correo" required><br><br>
+    <form method="POST">
 
-    <label>Contraseña:</label><br>
-    <input type="password" name="contrasena" required><br><br>
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
 
-    <label>Rol:</label><br>
-    <select name="rol" required>
-        <option value="Padre">Padre</option>
-        <option value="Administrador">Docente</option>
-        <option value="Administrador">Cordinador</option>
-         <option value="Administrador">Rector</option>
-    </select><br><br>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
 
-    <button type="submit">Registrar</button>
+        <input type="password" name="contrasena" placeholder="Contraseña" required>
 
-</form>
+        <select name="rol" required>
+    <option value="" selected disabled>Selecciona un rol</option>
+    <option value="Padre">👨‍👩‍👧 Padre</option>
+    <option value="Docente">👩‍🏫 Docente</option>
+    <option value="Administrador">🛡️ Administrador</option>
+</select>
 
-<br>
+        <button type="submit">Registrarse</button>
 
-<?php
-if($mensaje != ""){
-    echo "<h3>$mensaje</h3>";
-}
-?>
+    </form>
+
+    <p><?php echo $mensaje; ?></p>
+
+</div>
 
 </body>
 </html>

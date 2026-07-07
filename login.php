@@ -25,27 +25,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
-<h2>Inicio de sesión</h2>
+<div class="login-container">
 
-<form method="POST">
+    <img src="img/logo.png" alt="Logo SAAD" class="logo">
 
-    Correo:
-    <input type="email" name="correo" required>
-    <br><br>
+    <h2>Inicio de sesión</h2>
 
-    Contraseña:
-    <input type="password" name="contrasena" required>
-    <br><br>
+    <form method="POST">
 
-    <button type="submit">Ingresar</button>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
 
-</form>
+        <input type="password" name="contrasena" placeholder="Contraseña" required>
 
-<p><?php echo $mensaje; ?></p>
+        <button type="submit">Ingresar</button>
+
+    </form>
+
+    <p><?php echo $mensaje; ?></p>
+
+</div>
 
 </body>
 </html>
